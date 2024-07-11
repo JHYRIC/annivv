@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+}
+
+#babyjen,
+#babyric {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#babyjen {
+  float: left;
+  background-image: url('1.jpg'); /* Replace with your image path */
+}
+
+#babyric {
+  float: right;
+  background-image: url('2.jpg'); /* Replace with your image path */
+}
+
+h1 {
+  color: #ff4da6;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col.left {
+  order: 1; /* Ensure left column appears first */
+}
+
+.col.center {
+  order: 2; /* Ensure center column appears second */
+  text-align: center; /* Center align text */
+}
+
+.col.right {
+  order: 3; /* Ensure right column appears last */
+}
+
+.image-container {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  margin-bottom: 20px; /* Space between list items */
+  line-height: 1.5;
+}
+
+#p1 {
+  max-width: 600px; /* Limit maximum width of text */
+}
